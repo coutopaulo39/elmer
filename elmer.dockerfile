@@ -1,5 +1,6 @@
 # Set the base image to the latest LTS version of Ubuntu
-FROM ubuntu:latest
+FROM ubuntu:latest as base
+FROM base as builder
 
 # Set the working directory to /home
 WORKDIR /home
