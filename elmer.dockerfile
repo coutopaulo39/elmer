@@ -1,5 +1,5 @@
 # Set the base image to the latest LTS version of Ubuntu
-FROM ubuntu:latest as base
+FROM ubuntu:20.04 as base
 FROM base as builder
 
 # Set the working directory to /home
